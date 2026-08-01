@@ -33,11 +33,11 @@ ipkg = "idris2-QuickCheck.ipkg"
 
 [custom.all.idris2-Logic]
 type = "local"
-path = "../Idris2-Logic"
+path = "../Idris2-Boole"
 ipkg = "idris2-Logic.ipkg"
 
 [custom.all.idris2-Boole]
 type = "local"
-path = "../Idris2-Logic"
+path = "../Idris2-Boole"
 ipkg = "idris2-Boole.ipkg"
 

@@ -96,7 +96,7 @@ Holds the state vectors, coordinate systems, and weight types:
 
 | Domain / Layer | Vexel (Input/Output State Vector) | Coordinate Type | Coefficient / Weight Type | Actual Type Implementation |
 | :--- | :--- | :--- | :--- | :--- |
-| **Row 1: [Singleton Repetition](https://github.com/justinkelly-ie/Idris2-Logic-Wiki/blob/main/Library/Wiki/Logic_Repetition.md) & [Bit Vexels](https://github.com/justinkelly-ie/Idris2-Logic-Wiki/blob/main/Library/Wiki/Bit_vexel.md)** | Logic wire state vector | `state` (Logical wire variables) | `BF2` (Modulo-2 parity bit) | `Byte state` / `Vexel BF2 state` / `DepByte state xs` |
+| **Row 1: [Singleton Repetition](https://github.com/justinkelly-ie/Idris2-Boole-Wiki/blob/main/Library/Wiki/Logic_Repetition.md) & [Bit Vexels](https://github.com/justinkelly-ie/Idris2-Boole-Wiki/blob/main/Library/Wiki/Bit_vexel.md)** | Logic wire state vector | `state` (Logical wire variables) | `BF2` (Modulo-2 parity bit) | `Byte state` / `Vexel BF2 state` / `DepByte state xs` |
 | **Row 2: [Singleton Lifted Polynumbers](https://github.com/justinkelly-ie/Idris2-Probability-Wiki/blob/main/Library/Wiki/Logic_Lifted.md)** | Arithmetic register state vector | `state` (Logic variables / base anchor) | `BoxInt` (Positional carry weights) | `ArithmeticState state` / `Vexel BoxInt state` / `DepArithmeticState state xs` |
 | **Row 5: [Rational Trigonometry](https://github.com/justinkelly-ie/Idris2-Trigonometry-Wiki/blob/main/Library/Wiki/Rational_Trigonometry.md)** | Side lengths / projections | `Coord2D` / `Geometry` | `BoxInt` | `Vexel BoxInt Geometry` |
 | **Row 6: [Universal Hyperbolic Geometry](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Universal_Hyperbolic_Geometry.md)** | Homogeneous points/lines | `Coord3D` | `MSetFraction` | `Vexel MSetFraction Coord3D` |
@@ -122,7 +122,7 @@ Holds the rational fraction layers (Numerator over Denominator) and conservation
 
 | Domain / Layer | Numerator (MSetFraction.num) | Denominator (MSetFraction.den) | Invariant / Annihilation Rule |
 | :--- | :--- | :--- | :--- |
-| **Row 1: [Singleton Repetition](https://github.com/justinkelly-ie/Idris2-Logic-Wiki/blob/main/Library/Wiki/Logic_Repetition.md)** | Active singleton bit `Sing BF2 state` | unit constant `Sing1 BF2 TrivialBase` | Modulo-2 collapse: `[[]] + [[]] ≡ []` |
+| **Row 1: [Singleton Repetition](https://github.com/justinkelly-ie/Idris2-Boole-Wiki/blob/main/Library/Wiki/Logic_Repetition.md)** | Active singleton bit `Sing BF2 state` | unit constant `Sing1 BF2 TrivialBase` | Modulo-2 collapse: `[[]] + [[]] ≡ []` |
 | **Row 2: [Singleton Lifted Polynumbers](https://github.com/justinkelly-ie/Idris2-Probability-Wiki/blob/main/Library/Wiki/Logic_Lifted.md)** | Positional singleton `Sing BoxInt state` | unit constant `Sing1 BoxInt TrivialBase` | Positional Carry-Over: shift overflow to higher register |
 | **Row 3: [Functional Probability](https://github.com/justinkelly-ie/Idris2-Probability-Wiki/blob/main/Library/Wiki/Functional_Probability.md)** | Active probability numerator `Sing BoxInt v` | Total unnormalized sum `Sing1 BoxInt TrivialBase` | Conservation of Prime Factors / Normalization |
 | **Row 4: [Probability Bounds](https://github.com/justinkelly-ie/Idris2-Probability-Wiki/blob/main/Library/Wiki/Probability_Bounds.md)** | Bound numerator `BoxInt` | Bounded scale `PosNat` | Polyhedral boundary limits |

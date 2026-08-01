@@ -27,7 +27,7 @@ echo ""
 
 # Step 3: Run Logic Library Tests
 echo "▶ Running idris2-Logic QuickCheck Test Suite..."
-(cd ../Idris2-Logic && pack build idris2-Logic-test.ipkg 2>&1 && ./build/exec/logic-test 2>&1)
+(cd ../Idris2-Boole && pack build idris2-Logic-test.ipkg 2>&1 && ./build/exec/logic-test 2>&1)
 echo ""
 
 echo "╔══════════════════════════════════════════╗"
