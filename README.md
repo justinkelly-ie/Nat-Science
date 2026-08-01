@@ -96,16 +96,16 @@ Holds the state vectors, coordinate systems, and weight types:
 
 | Domain / Layer | Vexel (Input/Output State Vector) | Coordinate Type | Coefficient / Weight Type | Actual Type Implementation |
 | :--- | :--- | :--- | :--- | :--- |
-| **Row 1: [Singleton Repetition](https://github.com/justinkelly-ie/Idris2-Boole-Wiki/blob/main/Library/Wiki/Finite_Science/Singleton_Repetition.md) & [Bit Vexels](https://github.com/justinkelly-ie/Idris2-Boole-Wiki/blob/main/Library/Wiki/Finite_Science/Bit_vexel.md)** | Logic wire state vector | `state` (Logical wire variables) | `BF2` (Modulo-2 parity bit) | `Byte state` / `Vexel BF2 state` / `DepByte state xs` |
-| **Row 2: [Singleton Lifted Polynumbers](https://github.com/justinkelly-ie/Idris2-Boole-Wiki/blob/main/Library/Wiki/Finite_Science/Singleton_Lifted.md)** | Arithmetic register state vector | `state` (Logic variables / base anchor) | `BoxInt` (Positional carry weights) | `ArithmeticState state` / `Vexel BoxInt state` / `DepArithmeticState state xs` |
-| **Row 5: [Rational Trigonometry](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Finite_Science/Rational_Trigonometry.md)** | Side lengths / projections | `Coord2D` / `Geometry` | `BoxInt` | `Vexel BoxInt Geometry` |
-| **Row 6: [Universal Hyperbolic Geometry](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Finite_Science/Universal_Hyperbolic_Geometry.md)** | Homogeneous points/lines | `Coord3D` | `MSetFraction` | `Vexel MSetFraction Coord3D` |
-| **Row 7: [Blue Geometry](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Finite_Science/Blue_Geometry.md)** | Homogeneous Euclidean points/lines | `PixelNL Blue` | `BoxInt` | `Vexel BoxInt (PixelNL Blue)` |
-| **Row 8: [Red Geometry](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Finite_Science/Red_Geometry.md)** | Homogeneous Minkowski spacetime points | `PixelNL Red` | `BoxInt` | `Vexel BoxInt (PixelNL Red)` |
-| **Row 9: [Green Geometry](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Finite_Science/Green_Geometry.md)** | Homogeneous Galilean shear coordinates | `PixelNL Green` | `BoxInt` | `Vexel BoxInt (PixelNL Green)` |
-| **Row 10: [Electromagnetism](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Finite_Science/Electromagnetism.md)** | Loop chain tracks | `Edge` / `Face` | `Integer` / `Amplitude` | `Vexel Integer Edge` / `Vexel Integer Face` |
-| **Row 11: [Inversive Space Relativity](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Finite_Science/Inversive_Space.md)** | Conic equation coordinates | `Conic` | `BoxInt` | `Vexel BoxInt Conic` |
-| **Row 12: [Quantum Invariants](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Finite_Science/Quantum_Invariants.md)** | Spread polynomials | `Spread` | `BoxInt` | `Vexel BoxInt Spread` |
+| **Row 1: [Singleton Repetition](https://github.com/justinkelly-ie/Idris2-Logic-Wiki/blob/main/Library/Wiki/Logic_Repetition.md) & [Bit Vexels](https://github.com/justinkelly-ie/Idris2-Logic-Wiki/blob/main/Library/Wiki/Bit_vexel.md)** | Logic wire state vector | `state` (Logical wire variables) | `BF2` (Modulo-2 parity bit) | `Byte state` / `Vexel BF2 state` / `DepByte state xs` |
+| **Row 2: [Singleton Lifted Polynumbers](https://github.com/justinkelly-ie/Idris2-Probability-Wiki/blob/main/Library/Wiki/Logic_Lifted.md)** | Arithmetic register state vector | `state` (Logic variables / base anchor) | `BoxInt` (Positional carry weights) | `ArithmeticState state` / `Vexel BoxInt state` / `DepArithmeticState state xs` |
+| **Row 5: [Rational Trigonometry](https://github.com/justinkelly-ie/Idris2-Trigonometry-Wiki/blob/main/Library/Wiki/Rational_Trigonometry.md)** | Side lengths / projections | `Coord2D` / `Geometry` | `BoxInt` | `Vexel BoxInt Geometry` |
+| **Row 6: [Universal Hyperbolic Geometry](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Universal_Hyperbolic_Geometry.md)** | Homogeneous points/lines | `Coord3D` | `MSetFraction` | `Vexel MSetFraction Coord3D` |
+| **Row 7: [Blue Geometry](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Blue_Geometry.md)** | Homogeneous Euclidean points/lines | `PixelNL Blue` | `BoxInt` | `Vexel BoxInt (PixelNL Blue)` |
+| **Row 8: [Red Geometry](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Red_Geometry.md)** | Homogeneous Minkowski spacetime points | `PixelNL Red` | `BoxInt` | `Vexel BoxInt (PixelNL Red)` |
+| **Row 9: [Green Geometry](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Green_Geometry.md)** | Homogeneous Galilean shear coordinates | `PixelNL Green` | `BoxInt` | `Vexel BoxInt (PixelNL Green)` |
+| **Row 10: [Electromagnetism](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Electromagnetism.md)** | Loop chain tracks | `Edge` / `Face` | `Integer` / `Amplitude` | `Vexel Integer Edge` / `Vexel Integer Face` |
+| **Row 11: [Inversive Space Relativity](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Inversive_Space.md)** | Conic equation coordinates | `Conic` | `BoxInt` | `Vexel BoxInt Conic` |
+| **Row 12: [Quantum Invariants](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Quantum_Invariants.md)** | Spread polynomials | `Spread` | `BoxInt` | `Vexel BoxInt Spread` |
 
 
 ### 2. Maxels (Operators & SBFs)
@@ -113,8 +113,8 @@ Holds the transformation operators and routing templates guiding state collison:
 
 | Domain / Layer | Transformation Column (Maxel) | Symmetric Bilinear Form (SBFMset Maxel) | Actual Type Implementation |
 | :--- | :--- | :--- | :--- |
-| **Row 3: [Functional Probability](https://github.com/justinkelly-ie/Idris2-Boole-Wiki/blob/main/Library/Wiki/Finite_Science/Functional_Probability.md)** | Probability Maxel (normalized transition weights) | Normalizing Inner Product SBF (state overlaps) | `ProbabilityMaxel v` & `normSBF` |
-| **Row 4: [Indivisible Stochastic Mechanics](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Finite_Science/Indivisible_Mechanics.md)** | Non-Markovian transition amplitudes | Stochastic correspondence rules | `StochasticTransition` Maxels |
+| **Row 3: [Functional Probability](https://github.com/justinkelly-ie/Idris2-Probability-Wiki/blob/main/Library/Wiki/Functional_Probability.md)** | Probability Maxel (normalized transition weights) | Normalizing Inner Product SBF (state overlaps) | `ProbabilityMaxel v` & `normSBF` |
+| **Row 4: [Indivisible Stochastic Mechanics](https://github.com/justinkelly-ie/Idris2-Trigonometry-Wiki/blob/main/Library/Wiki/Indivisible_Mechanics.md)** | Non-Markovian transition amplitudes | Stochastic correspondence rules | `StochasticTransition` Maxels |
 
 
 ### 3. Fraction Multisets (Scale Invariants)
@@ -122,13 +122,13 @@ Holds the rational fraction layers (Numerator over Denominator) and conservation
 
 | Domain / Layer | Numerator (MSetFraction.num) | Denominator (MSetFraction.den) | Invariant / Annihilation Rule |
 | :--- | :--- | :--- | :--- |
-| **Row 1: [Singleton Repetition](https://github.com/justinkelly-ie/Idris2-Boole-Wiki/blob/main/Library/Wiki/Finite_Science/Singleton_Repetition.md)** | Active singleton bit `Sing BF2 state` | unit constant `Sing1 BF2 TrivialBase` | Modulo-2 collapse: `[[]] + [[]] ≡ []` |
-| **Row 2: [Singleton Lifted Polynumbers](https://github.com/justinkelly-ie/Idris2-Boole-Wiki/blob/main/Library/Wiki/Finite_Science/Singleton_Lifted.md)** | Positional singleton `Sing BoxInt state` | unit constant `Sing1 BoxInt TrivialBase` | Positional Carry-Over: shift overflow to higher register |
-| **Row 3: [Functional Probability](https://github.com/justinkelly-ie/Idris2-Boole-Wiki/blob/main/Library/Wiki/Finite_Science/Functional_Probability.md)** | Active probability numerator `Sing BoxInt v` | Total unnormalized sum `Sing1 BoxInt TrivialBase` | Conservation of Prime Factors / Normalization |
-| **Row 4: [Probability Bounds](https://github.com/justinkelly-ie/Idris2-Boole-Wiki/blob/main/Library/Wiki/Finite_Science/Probability_Bounds.md)** | Bound numerator `BoxInt` | Bounded scale `PosNat` | Polyhedral boundary limits |
-| **Row 4: [Indivisible Stochastic Mechanics](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Finite_Science/Indivisible_Mechanics.md)** | Trajectory count | Total breaks sum | Trajectory sequence limits |
-| **Row 6: [Universal Hyperbolic Geometry](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Finite_Science/Universal_Hyperbolic_Geometry.md)** | Projective cross-ratios | Projective frame field | Projective incidence invariants |
-| **Row 11: [Inversive Space Relativity](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Finite_Science/Inversive_Space.md)** | Conic equation coefficients | Inversion density | Inversive circle-reflection invariance |
+| **Row 1: [Singleton Repetition](https://github.com/justinkelly-ie/Idris2-Logic-Wiki/blob/main/Library/Wiki/Logic_Repetition.md)** | Active singleton bit `Sing BF2 state` | unit constant `Sing1 BF2 TrivialBase` | Modulo-2 collapse: `[[]] + [[]] ≡ []` |
+| **Row 2: [Singleton Lifted Polynumbers](https://github.com/justinkelly-ie/Idris2-Probability-Wiki/blob/main/Library/Wiki/Logic_Lifted.md)** | Positional singleton `Sing BoxInt state` | unit constant `Sing1 BoxInt TrivialBase` | Positional Carry-Over: shift overflow to higher register |
+| **Row 3: [Functional Probability](https://github.com/justinkelly-ie/Idris2-Probability-Wiki/blob/main/Library/Wiki/Functional_Probability.md)** | Active probability numerator `Sing BoxInt v` | Total unnormalized sum `Sing1 BoxInt TrivialBase` | Conservation of Prime Factors / Normalization |
+| **Row 4: [Probability Bounds](https://github.com/justinkelly-ie/Idris2-Probability-Wiki/blob/main/Library/Wiki/Probability_Bounds.md)** | Bound numerator `BoxInt` | Bounded scale `PosNat` | Polyhedral boundary limits |
+| **Row 4: [Indivisible Stochastic Mechanics](https://github.com/justinkelly-ie/Idris2-Trigonometry-Wiki/blob/main/Library/Wiki/Indivisible_Mechanics.md)** | Trajectory count | Total breaks sum | Trajectory sequence limits |
+| **Row 6: [Universal Hyperbolic Geometry](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Universal_Hyperbolic_Geometry.md)** | Projective cross-ratios | Projective frame field | Projective incidence invariants |
+| **Row 11: [Inversive Space Relativity](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Inversive_Space.md)** | Conic equation coefficients | Inversion density | Inversive circle-reflection invariance |
 
 </div>
 
