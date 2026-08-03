@@ -18,7 +18,7 @@ echo ""
 # The list of directories to synchronize (relative to parent of Scripts)
 REPOS=(
   "Finite-Science"
-  "idris2-LUniverse"
+  "idris2-Universe"
   "idris2-Universe-Wiki"
   "idris2-QuickCheck"
   "idris2-Multiset"

@@ -8,7 +8,7 @@ source ~/.emsdk/emsdk_env.sh
 cd /var/home/justin/Projects/idris2-Universe
 
 echo "Building Idris 2 C code..."
-pack build idris2-LUniverse-wasm.ipkg
+pack build idris2-Universe-wasm.ipkg
 
 # The generated C file will be build/exec/luniverse_wasm.c
 APP_C_FILE="build/exec/luniverse_wasm.c"

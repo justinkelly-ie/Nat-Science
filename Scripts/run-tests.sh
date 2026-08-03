@@ -15,9 +15,9 @@ echo "╚═══════════════════════�
 echo ""
 
 # Step 1: Build the main library
-echo "▶ Building idris2-LUniverse..."
-(cd ../idris2-Universe && pack build idris2-LUniverse.ipkg 2>&1)
-echo "  ✅ idris2-LUniverse module"
+echo "▶ Building idris2-Universe..."
+(cd ../idris2-Universe && pack build idris2-Universe.ipkg 2>&1)
+echo "  ✅ idris2-Universe module"
 echo ""
 
 # Step 2: Run Unified Tests
@@ -26,8 +26,8 @@ echo "▶ Running Unified Linear-Physics Test Harness (Wiki output)..."
 echo ""
 
 # Step 3: Run Logic Library Tests
-echo "▶ Running idris2-Logic QuickCheck Test Suite..."
-(cd ../Idris2-Boole && pack build idris2-Logic-test.ipkg 2>&1 && ./build/exec/logic-test 2>&1)
+echo "▶ Running idris2-Boole QuickCheck Test Suite..."
+(cd ../Idris2-Boole && pack build idris2-Boole-test.ipkg 2>&1 && ./build/exec/boole-test 2>&1)
 echo ""
 
 echo "╔══════════════════════════════════════════╗"

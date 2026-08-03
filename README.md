@@ -280,7 +280,7 @@ Projects/
 │   ├── Library/Wiki/           ← Literate Idris verification proofs & documentation
 │   └── idris2-Universe-Wiki.ipkg
 │
-├── [idris2-LUniverse/](https://github.com/justinkelly-../idris2-Universe)   ← The core simulation engine (59 modules)
+├── [idris2-Universe/](https://github.com/justinkelly-../idris2-Universe)   ← The core simulation engine (59 modules)
 │   ├── src/Simplex/            ← State and relation topologies
 │   ├── src/Evolution/          ← Polynomial evolution gates and loops
 │   └── src/Physics/            ← Physical, chemical, biological, and neurological folds
@@ -337,11 +337,11 @@ To launch the interactive visualizer:
    ```bash
    # Using host:
    cd ../idris2-Universe
-   pack --cg javascript build idris2-LUniverse-js.ipkg
+   pack --cg javascript build idris2-Universe-js.ipkg
    cp build/exec/luniverse_js ../Finite-Science/visualizer/public/luniverse_js.js
    
    # Or using the Fedora Toolbox environment:
-   toolbox run -c fedora-toolbox-44 bash -c "cd ../idris2-Universe && pack --cg javascript build idris2-LUniverse-js.ipkg"
+   toolbox run -c fedora-toolbox-44 bash -c "cd ../idris2-Universe && pack --cg javascript build idris2-Universe-js.ipkg"
    cp ../idris2-Universe/build/exec/luniverse_js visualizer/public/luniverse_js.js
    ```
 
