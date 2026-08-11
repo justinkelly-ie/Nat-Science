@@ -47,3 +47,8 @@ ipkg = "idris2-Substrate.ipkg"
 type = "local"
 path = "../idris2-Electromagnetism"
 ipkg = "idris2-Electromagnetism.ipkg"
+
+[custom.all.Idris2-GeoLinAlg]
+type = "local"
+path = "../Idris2-GeoLinAlg"
+ipkg = "Idris2-GeoLinAlg.ipkg"
