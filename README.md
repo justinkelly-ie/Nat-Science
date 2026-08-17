@@ -67,7 +67,7 @@ It acts as the mathematical "handshake" of the table, transforming fractional ra
 ---
 ### Side-by-Side Architectural Contrast
 
-| Feature | Transformation MSet (Operator) | Symmetric Bilinear Form MSet (SBFMset) (Mechanism) |
+| Feature | Transformation Box (Operator) | Symmetric Bilinear Form Box (SBFBox) (Mechanism) |
 | :--- | :--- | :--- |
 | **Primary Role** | Substance/values of the change. | Scaffolding/geometry/logic of the change. |
 | **Action** | Scales, flips, or adds to the state. | Organizes, maps, and drives annihilations. |
@@ -81,7 +81,7 @@ Both must be multisets so that Idris 2 can compose them into a unified algebraic
 ### Dimensional & Scale Progression
 
 The table scales dynamically from logic circuits to spatial geometries by lifting container invariants:
-*   **Row 1 (Singleton Logic)**: Checks if one bit collides with another bit (`Sing`).
+*   **Row 1 (Unixel Logic)**: Checks if one bit collides with another bit (`Sing`).
 *   **Row 2 (Positional Arithmetic)**: Chains those bits into place values (Vexels of `Sing`).
 *   **Row 3 (Functional Probability)**: Normalizes unnormalized place values into exact rational fractions (`MSetFractionVexel`).
 *   **Row 4 (Probability Bounds)**: Bounding probability intervals under incomplete information using polyhedral inequalities (`ProbBounds`).
@@ -89,15 +89,15 @@ The table scales dynamically from logic circuits to spatial geometries by liftin
 *   **Row 6 (Projective Space / Hyperbolic Geometry)**: Projects coordinates into homogeneous coordinate planes (`Homogeneous`).
 *   **Row 7–9 (Spatial Geometry)**: Extends projective coordinate layouts across specific metrics (Blue/Red/Green chromogeometries).
 
-The Global Finite Science Table is split into three separate tables detailing **Vexels (States)**, **Maxels (Operators)**, and **Fraction Multisets (Invariants & Denominators)**, incorporating the recently upgraded singleton types:
+The Global Finite Science Table is split into three separate tables detailing **Vexels (States)**, **Maxels (Operators)**, and **Fraction Multisets (Invariants & Denominators)**, incorporating the recently upgraded unixel types:
 
 ### 1. Vexels (States)
 Holds the state vectors, coordinate systems, and weight types:
 
 | Domain / Layer | Vexel (Input/Output State Vector) | Coordinate Type | Coefficient / Weight Type | Actual Type Implementation |
 | :--- | :--- | :--- | :--- | :--- |
-| **Row 1: [Singleton Repetition](https://github.com/justinkelly-ie/Idris2-Boole-Wiki/blob/main/Library/Wiki/Logic_Repetition.md) & [Bit Vexels](https://github.com/justinkelly-ie/Idris2-Boole-Wiki/blob/main/Library/Wiki/Bit_vexel.md)** | Logic wire state vector | `state` (Logical wire variables) | `BF2` (Modulo-2 parity bit) | `Byte state` / `Vexel BF2 state` / `DepByte state xs` |
-| **Row 2: [Singleton Lifted Polynumbers](https://github.com/justinkelly-ie/Idris2-Probability-Wiki/blob/main/Library/Wiki/Logic_Lifted.md)** | Arithmetic register state vector | `state` (Logic variables / base anchor) | `BoxInt` (Positional carry weights) | `ArithmeticState state` / `Vexel BoxInt state` / `DepArithmeticState state xs` |
+| **Row 1: [Unixel Repetition](https://github.com/justinkelly-ie/Idris2-Boole-Wiki/blob/main/Library/Wiki/Logic_Repetition.md) & [Bit Vexels](https://github.com/justinkelly-ie/Idris2-Boole-Wiki/blob/main/Library/Wiki/Bit_vexel.md)** | Logic wire state vector | `state` (Logical wire variables) | `BF2` (Modulo-2 parity bit) | `Byte state` / `Vexel BF2 state` / `DepByte state xs` |
+| **Row 2: [Unixel Lifted Polynumbers](https://github.com/justinkelly-ie/Idris2-Probability-Wiki/blob/main/Library/Wiki/Logic_Lifted.md)** | Arithmetic register state vector | `state` (Logic variables / base anchor) | `BoxInt` (Positional carry weights) | `ArithmeticState state` / `Vexel BoxInt state` / `DepArithmeticState state xs` |
 | **Row 5: [Rational Trigonometry](https://github.com/justinkelly-ie/Idris2-Trigonometry-Wiki/blob/main/Library/Wiki/Rational_Trigonometry.md)** | Side lengths / projections | `Coord2D` / `Geometry` | `BoxInt` | `Vexel BoxInt Geometry` |
 | **Row 6: [Universal Hyperbolic Geometry](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Universal_Hyperbolic_Geometry.md)** | Homogeneous points/lines | `Coord3D` | `MSetFraction` | `Vexel MSetFraction Coord3D` |
 | **Row 7: [Blue Geometry](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Blue_Geometry.md)** | Homogeneous Euclidean points/lines | `PixelNL Blue` | `BoxInt` | `Vexel BoxInt (PixelNL Blue)` |
@@ -122,9 +122,9 @@ Holds the rational fraction layers (Numerator over Denominator) and conservation
 
 | Domain / Layer | Numerator (MSetFraction.num) | Denominator (MSetFraction.den) | Invariant / Annihilation Rule |
 | :--- | :--- | :--- | :--- |
-| **Row 1: [Singleton Repetition](https://github.com/justinkelly-ie/Idris2-Boole-Wiki/blob/main/Library/Wiki/Logic_Repetition.md)** | Active singleton bit `Sing BF2 state` | unit constant `Sing1 BF2 TrivialBase` | Modulo-2 collapse: `[[]] + [[]] ≡ []` |
-| **Row 2: [Singleton Lifted Polynumbers](https://github.com/justinkelly-ie/Idris2-Probability-Wiki/blob/main/Library/Wiki/Logic_Lifted.md)** | Positional singleton `Sing BoxInt state` | unit constant `Sing1 BoxInt TrivialBase` | Positional Carry-Over: shift overflow to higher register |
-| **Row 3: [Functional Probability](https://github.com/justinkelly-ie/Idris2-Probability-Wiki/blob/main/Library/Wiki/Functional_Probability.md)** | Active probability numerator `Sing BoxInt v` | Total unnormalized sum `Sing1 BoxInt TrivialBase` | Conservation of Prime Factors / Normalization |
+| **Row 1: [Unixel Repetition](https://github.com/justinkelly-ie/Idris2-Boole-Wiki/blob/main/Library/Wiki/Logic_Repetition.md)** | Active unixel bit `Unixel BF2 state` | unit constant `Unixel1 BF2 TrivialBase` | Modulo-2 collapse: `[[]] + [[]] ≡ []` |
+| **Row 2: [Unixel Lifted Polynumbers](https://github.com/justinkelly-ie/Idris2-Probability-Wiki/blob/main/Library/Wiki/Logic_Lifted.md)** | Positional unixel `Unixel BoxInt state` | unit constant `Unixel1 BoxInt TrivialBase` | Positional Carry-Over: shift overflow to higher register |
+| **Row 3: [Functional Probability](https://github.com/justinkelly-ie/Idris2-Probability-Wiki/blob/main/Library/Wiki/Functional_Probability.md)** | Active probability numerator `Unixel BoxInt v` | Total unnormalized sum `Unixel1 BoxInt TrivialBase` | Conservation of Prime Factors / Normalization |
 | **Row 4: [Probability Bounds](https://github.com/justinkelly-ie/Idris2-Probability-Wiki/blob/main/Library/Wiki/Probability_Bounds.md)** | Bound numerator `BoxInt` | Bounded scale `PosNat` | Polyhedral boundary limits |
 | **Row 4: [Indivisible Stochastic Mechanics](https://github.com/justinkelly-ie/Idris2-Trigonometry-Wiki/blob/main/Library/Wiki/Indivisible_Mechanics.md)** | Trajectory count | Total breaks sum | Trajectory sequence limits |
 | **Row 6: [Universal Hyperbolic Geometry](https://github.com/justinkelly-ie/idris2-Universe-Wiki/blob/main/Library/Wiki/Universal_Hyperbolic_Geometry.md)** | Projective cross-ratios | Projective frame field | Projective incidence invariants |
